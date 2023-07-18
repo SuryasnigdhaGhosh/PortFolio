@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>PortFolio</title>
+</head>
+<body>
+
+<!-------------------------sidebar----------------------------->
+
+
+    <div class="sidebar">
+        <div class="logo">
+            <img class="logo" src="img/logo.png">
+            <img class="photo" src="img/user.png">
+        </div>   
+        <div class="social">
+            <a class="social-btn-a" href="#">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+            <a class="social-btn" href="https://github.com/SuryasnigdhaGhosh">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="social-btn" href="https://in.linkedin.com/">
+                <i class="fa-brands fa-linkedin"></i>
+                
+            </a>
+            <a class="social-btn"  href="https://www.instagram.com/__suryaa_._/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <a class="social-btn" href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div> 
+    </div>
+
+
+
+
+<!-------------------------navbar----------------------------->
+
+    <div class="navbar">
+        
+        <nav>
+            <ul class="navbar-list">
+                <li class="navbar-list-item"><a href="#home"style="--i:1"><span style="color: #31b274">01.</span> Home</a></li>
+                <li class="navbar-list-item"><a href="#about" style="--i:2"><span style="color: #31b274">02.</span> About</a></li>
+                <li class="navbar-list-item"><a href="#portfolio"style="--i:3"><span style="color: #31b274">03.</span>  Projects</a></li>
+                <li class="navbar-list-item"><a href="#art"style="--i:4"><span style="color: #31b274">04.</span> Art</a></li>
+                
+            </ul>  
+        </nav>
+    </div>
+
+
+
+<!-------------------------mainwindow----------------------------->
+
+    
+   
+    <div id="home">
+        
+        <div class="name">
+            <h3>Hello, My name is</h3>
+            <h1 data-text="Suryasnigdha&#160Ghosh.">Suryasnigdha Ghosh.</h1>
+        </div>
+        <div class="desc">
+            <div class="static-text">I'm a</div>
+            <ul class="dynamic-text">
+                <li><span><>Web Designer </span></li>
+                <li><span>#Python Developer </span></li>
+            </ul>
+        </div>
+        <div class="button"><a href="Resume.pdf">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            RESUME</a>
+        </div>
+       
+    </div>
+
+
+
+
+ <!-------------------------about------------------------------>
+        
+    
+    <div id="about">
+        <div class="container reveal fade-left">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/meeee.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I'm a final year B.Tech Computer Science student passionate about Python and Web design. With expertise in Python programming and skills in HTML, CSS, and JavaScript, I love to develop and deploy elegant websites and efficient problem solutions using Python . I thrive on solving complex problems and staying updated with the latest technologies.I am a quick learner  and am willing to learn new skills and
+                        have many existing ones to offer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>Frontend Web Designing</li>
+                            <li><span>Data Structure and Algortithm</span><br>Python</li>
+                            <li><span>Database Management</span><br>SQL/MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>“Exploratory Data Analysis for Machine Learning IBM Machine Learning”</span><br>Coursera</li>
+                            <li><span>“Python 3 Programming Specialization Course University of Michigan” </span><br> Coursera</li>
+                            <li><span>“Google Data Analytics Professional Certificate” </span><br>Coursera</li>
+                            <li><span>“PYTHON (INTERMEDIATE)”</span><br>HackerRank</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>CSE, University of Engineering and Management</span><br>2024</li>
+                            <li><span>AISSCE, Kalyani Central Model School</span><br> 2019</li>
+                            <li><span>WBBSE, Springdale High School</span><br>2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-------------------------portfolio----------------------------->
+
+
+
+
+    <div id="portfolio">
+        <div class="container reveal fade-bottom">
+            <h1 class="sub-title">PROJECTS</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/1.png" >
+                    <div class="layer">
+                        <h3>MUVis</h3>
+                        <p>A beautiful Movie straming  website completely user friendly created using html , css and javascript.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/2.png" >
+                    <div class="layer">
+                        <h3>SPACEFIGHTER (PYGAME)</h3>
+                        <p>Had fun developing a popular SPACEFIGHTER game using the pygame module of python.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/3.png" >
+                    <div class="layer">
+                        <h3>OPENCART(E-Commerce Website)</h3>
+                        <p>Worked in a group of 5 to develop a E-commerce website(Front-end) for
+                            college mini-project</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a  class="portfolio-btn"><span>SEE MORE</span></a>
+        </div>
+    </div> 
+
+
+
+
+
+<!-------------------------art----------------------------->
+
+
+
+    
+    <div id="art">
+        <div class="container reveal fade-left ">
+            <div class="sub-title">CHECK OUT MY ART</div>
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <img src="img/a.jpg" draggable="false">
+                <img src="img/c.jpg" draggable="false">
+                <img src="img/f.jpg" draggable="false">
+                <img src="img/i.jpg" draggable="false">
+                <img src="img/b.jpg" draggable="false">
+                
+                <img src="img/e.jpg" draggable="false">
+                <img src="img/j.jpg" draggable="false">
+                <img src="img/h.jpg" draggable="false">
+                <img src="img/d.jpg" draggable="false">
+               
+                <img src="img/g.jpg" draggable="false">
+    
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        
+    
+        if (elementTop < windowHeight) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+</script>  
+
+
+</body>
+</html>
