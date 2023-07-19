@@ -19,7 +19,7 @@
             <img class="photo" src="img/user.png">
         </div>   
         <div class="social">
-            <a class="social-btn-a" href="#">
+            <a class="social-btn-a" href="#contact">
                 <i class="fa-regular fa-comment-dots"></i>
             </a>
             <a class="social-btn" href="https://github.com/SuryasnigdhaGhosh">
@@ -32,10 +32,7 @@
             <a class="social-btn"  href="https://www.instagram.com/__suryaa_._/">
                 <i class="fab fa-instagram"></i>
             </a>
-            
-            <a class="social-btn" href="#">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+          
         </div> 
     </div>
 
@@ -100,7 +97,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">ABOUT ME</h1>
-                    <p>I'm a final year B.Tech Computer Science student passionate about Python and Web design. With expertise in Python programming and skills in HTML, CSS, and JavaScript, I love to develop and deploy elegant websites and efficient problem solutions using Python . I thrive on solving complex problems and staying updated with the latest technologies.I am a quick learner  and am willing to learn new skills and
+                    <p>I'm a final year B.Tech Computer Science student passionate about Python and Web design. With expertise in Python programming and skills in HTML, CSS, and JavaScript, I love to develop and deploy elegant websites and efficient problem solutions using Python .I thrive on solving complex problems and staying updated with the latest technologies.I am a quick learner  and am willing to learn new skills and
                         have many existing ones to offer.
                     </p>
                     <div class="tab-titles">
@@ -210,7 +207,39 @@
 
 
 
+<!---------------------contact----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane" ></i>   suryasnigdhaghosh@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt" ></i> 7998489479</p>
 
+                    <a href="img/CV.pdf" download class="contact-btn">Download CV</a>
+
+                </div>   
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="6"  name="Message" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="contact-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                
+            </div>
+
+        </div>
+
+        
+        <div class="copyright">
+            <p>Copyright @ Suryasnigdha Ghosh <img  src="img/logo.png"></p>
+        </div>
+
+        
+    </div>
 
 
 
@@ -248,7 +277,24 @@
 
 window.addEventListener("scroll", reveal);
 </script>  
-
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwARm0MdYFdCkz3z5F4h7T0mL7gMor-KLTQI70JWrlQRoU6F6MiQ19hPcLp8cG_qYkaHA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>
