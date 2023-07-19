@@ -9,9 +9,9 @@ let isDragStart=false,isDragging=false, prevPageX, prevScrollLeft , positionDiff
 
 
 const showHideIcons =() => {
-    let scrollWidth= carousel.scrollWidth - carousel.clientWidth;
+    let max= (carousel.scrollWidth - carousel.clientWidth);
     arrowIcons[0].style.display = carousel.scrollLeft== 0 ? "none" : "block" ;
-    arrowIcons[1].style.display = carousel.scrollLeft== scrollWidth ? "none" : "block" ;
+    arrowIcons[1].style.display = carousel.scrollLeft== max ? "none" : "block" ;
 }
 
 
