@@ -579,7 +579,7 @@ nav a{
     }
     .carousel img{
         border-radius: 10px;
-        height:300px !important;
+        height:400px !important;
     }
 }
 
@@ -854,7 +854,7 @@ nav a{
 } 
 .carousel img{
     border-radius: 20px;
-    height:400px;
+    height:500px;
     object-fit:cover;
     margin-left: 14px;
     width: calc(97% / 3);
@@ -954,6 +954,6 @@ nav a{
     }
     
     .carousel img{
-        height: 400px;
+        height: 500px;
     }
 } 
