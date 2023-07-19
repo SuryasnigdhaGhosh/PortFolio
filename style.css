@@ -893,13 +893,17 @@ nav a{
 }
 
 
+#art .container i:first-child{
+    
+    display: none;
+    
+}
 #left{
     left: -23px;
-    display: none;
     z-index: 1;
 }
 
-#right{
+#art .container i:last-child{
     right: -23px;
 }
 
@@ -945,7 +949,7 @@ nav a{
         left: 0px;
     }
     
-    #right{
+    #art .container i:last-child{
         right: 0px;
     }
     
