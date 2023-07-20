@@ -736,8 +736,7 @@ nav a{
         margin-bottom: 100px;
     }
     .carousel{
-        margin-left: 14px;
-        margin-right: 14px;
+        
         filter: drop-shadow(0px 40px 20px #000000);
     }
     #left{
