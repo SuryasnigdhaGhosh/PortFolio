@@ -649,7 +649,7 @@ nav a{
 } 
 .carousel img{
     border-radius: 20px;
-    height:500px;
+    height:400px;
     object-fit:cover;
     margin-left: 14px;
     width: calc(97% / 3);
@@ -736,7 +736,8 @@ nav a{
         margin-bottom: 100px;
     }
     .carousel{
-        
+        margin-left: 14px;
+        margin-right: 14px;
         filter: drop-shadow(0px 40px 20px #000000);
     }
     #left{
